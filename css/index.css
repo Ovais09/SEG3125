@@ -1,0 +1,38 @@
+.a {
+    border-style:solid;
+    border-color:#6666FF;
+    width:100%;
+    height:100px;
+    background:#6666FF
+}
+
+.b {
+    margin:auto;
+    text-align:center;
+}
+
+.center {
+    margin:auto;
+    text-align:center;
+}
+
+h1 {
+    color:#FFFFFF;
+}
+
+h2 {
+    text-align:center;
+}
+
+img {
+    border-style:solid;
+    border-color:black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+body {
+    margin:0%
+}
