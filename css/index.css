@@ -15,8 +15,9 @@
 .center {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    text-align:center;
 }
+
 
 h1 {
     color:#FFFFFF;
@@ -40,7 +41,7 @@ body {
 }
 
 button {
-     
+        margin-left: 43%;
         position: relative;
         display: block;
         width: 200px;
@@ -53,6 +54,49 @@ button {
         font-weight: 300;
         cursor: pointer;
         transition: all .1s ease-in-out;
-        
       
 }
+
+.checkbox2 {
+    margin-left: -47px;
+}
+
+.checkbox3 {
+    margin-left: -64px;
+}
+
+.checkbox4 {
+    margin-left: -65px;
+}
+
+.checkbox5 {
+    margin-left: -57px;
+}
+
+.checkbox6 {
+    margin-left: 57px;
+}
+
+.scale {
+    margin-left: -45px;
+}
+
+#yes {
+    margin-left: -40px;
+}
+
+#no {
+    margin-left: -40px;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
+
