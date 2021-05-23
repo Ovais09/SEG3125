@@ -6,13 +6,108 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="main stylesheet" href="./styles/index.css">
+        <link rel="navigation bar stylesheet" href="styles/nav.css">
+        <link rel="items stylesheet" href="styles/items.css">
         <title>Fresh Food Deluxe</title>
     </head>
 
+    <script src="scripts/index.js"></script>
+
     <body>
 
-        <h1> Welcome to fresh food Deluxe!</h1>
+        <div class="container">
+            <img src="images/freshfood.jpg"> 
+            <h1 class="header"> Welcome to the Fresh Food Deluxe!</h1>
+        </div>
+
+        <nav>
+            <a onclick="c()">Client</a>
+            <a onclick="a()">Products</a>
+            <a onclick="b()">Cart</a>
+            <div class="animation start-home"></div>
+        </nav>
+
+
+        <div id="Client"> 
+
+
+            <h1>Client Information</h1>
+
+            <h1>Tell us a bit about yourself</h1>
+
+
+            <div class="dropdown">
+                <label>Choose a category:</label>  </br> </br>
+                <select onchange="d()" id="options">
+                    <option label="Please Select"></option>
+                    <option value="lactose-intolerant">lactose-intolerant</option>
+                    <option value="nut allergies">nut allergies</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            </br>
+            
+            <div class="dropdown">
+                <label>Choose whether or not you want only organic products displayed:</label>  </br> </br>
+                <select onchange="d()" id="options">
+                    <option label="Please Select"></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Mix">Mix</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div id="Products"> 
+
+
+            <h1>Your targeted products</h1>
+
+            <h1>We preselected products based on your restrictions.</h1>
+
+            <div class="items">
+                <label>Choose items to buy:</label></div>
+                <div class="a">
+                    <input type="checkbox">
+                    <label>a</label></br>
+                </div>
+                <div class="a"> 
+                    <input type="checkbox">
+                    <label>b</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox">
+                    <label>c</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Cart"> 
+
+
+            <h1>Cart</h1>
+
+            <h1>Tell us a bit about yourself</h1>
+
+
+            <div class="dropdown">
+                <label>Choose a category:</label>
+                <select>
+                    <option label="Please Select"></option>
+                    <option value="lactose-intolerant">lactose-intolerant</option>
+                    <option value="nut allergies">nut allergies</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+        </div>
+
+       
+        
 
 
     </body>
