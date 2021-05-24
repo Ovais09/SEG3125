@@ -41,9 +41,9 @@ body {
 }
 
 button {
-        margin-left: 43%;
+        text-align: center;
         position: relative;
-        display: block;
+        display: inline-block;
         width: 200px;
         height: 36px;
         border-radius: 18px;
@@ -58,23 +58,23 @@ button {
 }
 
 .checkbox2 {
-    margin-left: -47px;
+    margin-left: -48px;
 }
 
 .checkbox3 {
-    margin-left: -64px;
+    margin-left: -67px;
 }
 
 .checkbox4 {
-    margin-left: -65px;
+    margin-left: -71px;
 }
 
 .checkbox5 {
-    margin-left: -57px;
+    margin-left: -64px;
 }
 
 .checkbox6 {
-    margin-left: 57px;
+    margin-left: 48px;
 }
 
 .scale {
