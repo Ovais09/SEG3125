@@ -28,29 +28,29 @@ nav .animation {
 }
 a:nth-child(1) {
 	width: 100px;
-    left:23%;
+    left:36%;
     
 }
 a:nth-child(2) {
 	width: 110px;
-    left:25%;
+    left:38%;
 }
 a:nth-child(3) {
 	width: 100px;
-    left:27%;
+    left:40%;
 }
 nav .start-home, a:nth-child(1):hover~.animation {
 	width: 100px;
 	background-color: #1abc9c;
-    left:23%;
+    left:36%;
 }
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 110px;
 	background-color: #e74c3c;
-    left:32%;
+    left:45%;
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
 	width: 100px;
 	background-color: #3498db;
-    left:42%;
+    left:55%;
 }

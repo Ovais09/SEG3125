@@ -13,6 +13,7 @@
     </head>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/cart.js"></script>
 
     <body>
 
@@ -40,24 +41,20 @@
             <div class="dropdown">
                 <label>Choose a category:</label>  </br> </br>
                 <select onchange="d()" id="options">
-                    <option label="Please Select"></option>
+                    <option label="Please Select" value="Please Select"></option>
                     <option value="lactose-intolerant">lactose-intolerant</option>
                     <option value="nut allergies">nut allergies</option>
-                    <option value="None">None</option>
+                    <option value="lactose-intolerant and nut allergies">lactose-intolerant and nut allergies</option>
+                    <option value="organic">organic</option>
+                    <option value="organic and lactose-intolerant">organic and lactose-intolerant</option>
+                    <option value="organic and nut allergies">organic and nut allergies</option>
+                    <option value="None" selected >None</option>
+                    <option value="organic and nut allergies and lactose-intolerant">organic and nut allergies and lactose-intolerant</option>
                 </select>
             </div>
 
             </br>
             
-            <div class="dropdown">
-                <label>Choose whether or not you want only organic products displayed:</label>  </br> </br>
-                <select onchange="d()" id="options">
-                    <option label="Please Select"></option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                    <option value="Mix">Mix</option>
-                </select>
-            </div>
 
         </div>
 
@@ -71,18 +68,93 @@
             <div class="items">
                 <label>Choose items to buy:</label></div>
                 <div class="a">
-                    <input type="checkbox">
-                    <label>a</label></br>
+                    <input type="checkbox" id="Chicken" value=1>
+                    <label>Chicken, $1</label></br>
                 </div>
                 <div class="a"> 
-                    <input type="checkbox">
-                    <label>b</label></br>
+                    <input type="checkbox" value=2>
+                    <label>Fish, $2</label></br>
                 </div>
                 <div class="a">
-                    <input type="checkbox">
-                    <label>c</label>
+                    <input type="checkbox" value = 3>
+                    <label>Beef, $3</label>
                 </div>
+                <div class="a">
+                    <input type="checkbox" value = 4>
+                    <label>Apples, $4</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=5>
+                    <label>Pears, $5</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value = 6>
+                    <label>Strawberries, $6</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=7>
+                    <label>Lemons, $7</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=8>
+                    <label>Bananas, $8</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=9>
+                    <label>Mangoes, $9</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=10>
+                    <label>Oranges, $10</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value = 11>
+                    <label>Pumpkins, $11</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=12>
+                    <label>Mint, $12</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=13>
+                    <label>Parsley, $13</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=14>
+                    <label>Milk, $14</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=15>
+                    <label>Yogurt, $15</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=16>
+                    <label>Peanuts, $16</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value=17>
+                    <label>Trail Mix, $17</label></br>
+                </div>
+                <div class="a">
+                    <input type="checkbox" value =18>
+                    <label>Nuts, $18</label></br>
+                </div>
+
+                <br>
+
+                <div class="button">
+                    <button onclick="calculatePrice()">Add selected items to cart.</button>
+                </div>
+
             </div>
+
+
+
+                <br>
+
+                
+            </div>
+
 
         </div>
 
@@ -91,24 +163,22 @@
 
             <h1>Cart</h1>
 
-            <h1>Tell us a bit about yourself</h1>
+            <h1>Here is your cart.</h1>
 
+            <div id="label"> </div>
 
-            <div class="dropdown">
-                <label>Choose a category:</label>
-                <select>
-                    <option label="Please Select"></option>
-                    <option value="lactose-intolerant">lactose-intolerant</option>
-                    <option value="nut allergies">nut allergies</option>
-                    <option value="None">None</option>
-                </select>
-            </div>
+            <div id ="itemsSelected"></div>
+
+            <br>
+
+            <div id ="Price"></div>
+
 
         </div>
 
-       
+        <br>
         
-
+        <footer>Website designed by Giorno Giovanna</footer>
 
     </body>
 

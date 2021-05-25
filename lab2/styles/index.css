@@ -10,8 +10,14 @@ h1 {
 body {
     margin:0%;
     font-family: sans-serif;
-    
 }
+
+footer {
+    text-align: center;
+}
+
+
+
 
 .container {
     position: relative;
