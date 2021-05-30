@@ -1,5 +1,7 @@
 function calculatePrice () {
 
+    alert("Items succesfully added to cart!");
+
     var price = 0;
 
     document.getElementById("label").innerHTML = "You selected: " + "<br>";
