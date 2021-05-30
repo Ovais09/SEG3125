@@ -66,6 +66,19 @@ function d () {
     }
 
     else if (x== "nut allergies"){
+        y[6].style.display = "initial";
+       y[7].style.display = "initial";
+       y[8].style.display = "initial";
+       y[9].style.display = "initial";
+       y[10].style.display = "initial";
+       y[11].style.display = "initial";
+       y[12].style.display = "initial";
+       y[13].style.display = "initial";
+       y[14].style.display = "initial";
+       y[15].style.display = "initial";
+       y[16].style.display = "initial";
+       y[17].style.display = "initial";
+       y[18].style.display = "initial";
         y[19].style.display = "initial";
         y[20].style.display = "initial";
         y[21].style.display = "none";
@@ -74,6 +87,19 @@ function d () {
     }
 
     else if (x== "lactose-intolerant and nut allergies"){
+        y[6].style.display = "initial";
+       y[7].style.display = "initial";
+       y[8].style.display = "initial";
+       y[9].style.display = "initial";
+       y[10].style.display = "initial";
+       y[11].style.display = "initial";
+       y[12].style.display = "initial";
+       y[13].style.display = "initial";
+       y[14].style.display = "initial";
+       y[15].style.display = "initial";
+       y[16].style.display = "initial";
+       y[17].style.display = "initial";
+       y[18].style.display = "initial";
         y[19].style.display = "none";
         y[20].style.display = "none";
         y[21].style.display = "none";

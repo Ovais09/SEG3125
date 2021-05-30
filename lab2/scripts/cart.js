@@ -11,9 +11,19 @@ function calculatePrice () {
     var checkBox = document.getElementsByTagName("input");
 
     if (checkBox[0].checked == true){
-        document.getElementById("itemsSelected").innerHTML = "Chicken" + "<br>";
-        document.getElementById('itemsSelected').style.textAlign = "center";
+
+        if (document.getElementById("itemsSelected").innerHTML.indexOf("Chicken") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").innerHTML = "Chicken" + "<br>";
+            document.getElementById('itemsSelected').style.textAlign = "center";
+        
+        }
+
         price = price + parseInt(checkBox[0].value);
+        
     }
 
     else {
@@ -24,10 +34,23 @@ function calculatePrice () {
     }
 
     if (checkBox[1].checked == true){
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Fish") >-1){
+
+        }
+
+        else {
+            
         document.getElementById("itemsSelected").appendChild(document.createTextNode("Fish"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        
+        }
+
         price = price + parseInt(checkBox[1].value);
+
+
+
     }
 
     else {
@@ -38,10 +61,20 @@ function calculatePrice () {
     }
 
     if (checkBox[2].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Beef"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Beef") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Beef"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        
+        }
+
         price = price + parseInt(checkBox[2].value);
+        
     }
 
     else {
@@ -52,9 +85,18 @@ function calculatePrice () {
     }
 
     if (checkBox[3].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Apples"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Apples") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Apples"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+
+        }
+        
         price = price + parseInt(checkBox[3].value);
     }
 
@@ -66,9 +108,18 @@ function calculatePrice () {
     }
 
     if (checkBox[4].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Pears"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Pears") >-1) {
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Pears"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+
+        }
+        
         price = price + parseInt(checkBox[4].value);
     }
 
@@ -80,9 +131,17 @@ function calculatePrice () {
     }
 
     if (checkBox[5].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Strawberries"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Strawberries") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Strawberries"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[5].value);
     }
 
@@ -94,9 +153,17 @@ function calculatePrice () {
     }
 
     if (checkBox[6].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Lemons"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Lemons") >-1) {
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Lemons"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[6].value);
     }
 
@@ -108,9 +175,17 @@ function calculatePrice () {
     }
 
     if (checkBox[7].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Bananas"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Bananas") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Bananas"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[7].value);
     }
 
@@ -122,9 +197,16 @@ function calculatePrice () {
     }
 
     if (checkBox[8].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Mangoes"));
-        document.getElementById("itemsSelected").appendChild(document.createElement("br"));
-        document.getElementById('itemsSelected').style.textAlign = "center";
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Mangoes") >-1) {
+
+        }
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Mangoes"));
+            document.getElementById("itemsSelected").appendChild(document.createElement("br"));
+            document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[8].value);
     }
 
@@ -136,9 +218,17 @@ function calculatePrice () {
     }
 
     if (checkBox[9].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Oranges"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Oranges") >-1) {
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Oranges"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[9].value);
     }
 
@@ -150,9 +240,17 @@ function calculatePrice () {
     }
 
     if (checkBox[10].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Pumpkins"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Pumpkins") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Pumpkins"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[10].value);
     }
 
@@ -164,9 +262,17 @@ function calculatePrice () {
     }
 
     if (checkBox[11].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Mint"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Mint") >-1) {
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Mint"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[11].value);
     }
 
@@ -178,9 +284,17 @@ function calculatePrice () {
     }
 
     if (checkBox[12].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Parsley"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Parsley") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Parsley"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[12].value);
     }
 
@@ -192,9 +306,17 @@ function calculatePrice () {
     }
 
     if (checkBox[13].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Milk"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Milk") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Milk"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[13].value);
     }
 
@@ -206,9 +328,16 @@ function calculatePrice () {
     }
 
     if (checkBox[14].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Yogurt"));
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Yogurt") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Yogurt"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[14].value);
     }
 
@@ -220,9 +349,17 @@ function calculatePrice () {
     }
 
     if (checkBox[15].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Peanuts"));
-        document.getElementById("itemsSelected").appendChild(document.createElement("br"));
-        document.getElementById('itemsSelected').style.textAlign = "center";
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Peanuts") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Peanuts"));
+            document.getElementById("itemsSelected").appendChild(document.createElement("br"));
+            document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[15].value);
     }
 
@@ -234,9 +371,17 @@ function calculatePrice () {
     }
 
     if (checkBox[16].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Trail Mix"));
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Trail Mix") >-1) {
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Trail Mix"));
         document.getElementById("itemsSelected").appendChild(document.createElement("br"));
         document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[16].value);
     }
 
@@ -248,9 +393,17 @@ function calculatePrice () {
     }
 
     if (checkBox[17].checked == true){
-        document.getElementById("itemsSelected").appendChild(document.createTextNode("Nuts"));
-        document.getElementById("itemsSelected").appendChild(document.createElement("br"));
-        document.getElementById('itemsSelected').style.textAlign = "center";
+
+        if(document.getElementById("itemsSelected").innerHTML.indexOf("Nuts") >-1){
+
+        }
+
+        else {
+            document.getElementById("itemsSelected").appendChild(document.createTextNode("Nuts"));
+            document.getElementById("itemsSelected").appendChild(document.createElement("br"));
+            document.getElementById('itemsSelected').style.textAlign = "center";
+        }
+        
         price = price + parseInt(checkBox[17].value);
     }
 
