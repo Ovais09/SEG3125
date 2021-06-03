@@ -15,19 +15,39 @@
     <script src="scripts/index.js"></script>
     <script src="scripts/cart.js"></script>
 
+
     <body>
 
         <div class="container">
-            <img src="images/freshfood.jpg"> 
+            <img src="images/foodimage.jpg"> 
             <h1 class="header"> Welcome to the Fresh Food Deluxe!</h1>
         </div>
 
+
         <nav>
+            <div class="nav-client">
+                <a>Step 1 <br>Client</a>
+            </div>
+
+            <div class="nav-products">
+                <a>Step 2 <br>Products</a>
+            </div>
+
+            <div class="nav-cart">
+                <a>Step 3 <br>Cart</a>
+            </div>
+            
+            
+            
+
+        </nav>
+
+        <!-- <nav>
             <a onclick="c()">Client</a>
             <a onclick="a()">Products</a>
             <a onclick="b()">Cart</a>
             <div class="animation start-home"></div>
-        </nav>
+        </nav> -->
 
 
         <div id="Client"> 
@@ -40,7 +60,7 @@
 
             <div class="dropdown">
                 <label>Choose a category:</label>  </br> </br>
-                <select onchange="d()" id="options">
+                <select  id="options">
                     <option label="Please Select" value="Please Select"></option>
                     <option value="lactose-intolerant">lactose-intolerant</option>
                     <option value="nut allergies">nut allergies</option>
@@ -66,7 +86,7 @@
             <h1>We preselected products based on your restrictions.</h1>
 
             <div class="items">
-                <label>Choose items to buy:</label></div>
+                <label class="buy">Choose items to buy:</label> <br>
                 <div class="a">
                     <input type="checkbox" id="Chicken" value=1>
                     <label>Chicken, $1</label></br>
@@ -143,8 +163,11 @@
                 <br>
 
                 <div class="items">
-                    <button onclick="calculatePrice()">Add selected items to cart.</button>
+                    <button id = "calculate" onclick="calculatePrice()">Add selected items to cart.</button>
                 </div>
+
+                <br>
+
 
             </div>
 
@@ -176,8 +199,20 @@
 
         </div>
 
+        <button id="back" onclick="c()">Go Back</button>
+
         <br>
+        <br>
+
+        <button id="step" onclick = "a()">Next Step</button>
+        <br>
+
+        <br> 
+        <br> 
+        <br> 
         
+    
+
         <footer>Website designed by Giorno Giovanna</footer>
 
     </body>

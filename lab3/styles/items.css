@@ -1,8 +1,15 @@
-.items {  
+/* .items {  
     margin-left: auto;
     margin-right: auto;
     text-align:center;
+} */
+
+.buy {
+    
+    margin-left: 45%;
 }
+
+
 
 .a {
     
@@ -15,8 +22,10 @@
 
 button {
     
-    text-align: center;
-
+    /* text-align: center; */
+    display: inline;
+    position: absolute;
+    margin-left: 40%;
     width: 250px;
     height: 46px;
     border-radius: 18px;
