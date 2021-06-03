@@ -32,13 +32,15 @@ function a (){
     
 
 
-    var x = document.getElementById("options").value;  
+    var x = document.getElementsByTagName("input");
     var y =  document.getElementsByTagName("div");
+
+    console.log(y);
     
 
 
-    if (x =="Please Select"){
-       y[8].style.display = "none";
+    if (x[0].checked ==false && x[1].checked ==false && x[2].checked ==false && x[3].checked ==false&& x[4].checked ==false ){
+       
        y[9].style.display = "none";
        y[10].style.display = "none";
        y[11].style.display = "none";
@@ -56,11 +58,12 @@ function a (){
        y[23].style.display = "none";
        y[24].style.display = "none";
        y[25].style.display = "none";
+       y[26].style.display = "none";
+
        
     }
 
-    else if (x == "lactose-intolerant") {
-       y[8].style.display = "initial";
+    else if (x[0].checked ==false && x[1].checked ==true && x[2].checked ==false && x[3].checked ==false&& x[4].checked ==false ) {
        y[9].style.display = "initial";
        y[10].style.display = "initial";
        y[11].style.display = "initial";
@@ -73,15 +76,17 @@ function a (){
        y[18].style.display = "initial";
        y[19].style.display = "initial";
         y[20].style.display = "initial";
-        y[21].style.display = "none";
+        y[21].style.display = "initial";
         y[22].style.display = "none";
-        y[23].style.display = "initial";
+        y[23].style.display = "none";
         y[24].style.display = "initial";
         y[25].style.display = "initial";
+        y[26].style.display = "initial";
+        y[26].style.marginLeft  = "46%";
     }
 
-    else if (x== "nut allergies"){
-       y[8].style.display = "initial";
+    else if (x[0].checked ==true && x[1].checked ==false && x[2].checked ==false && x[3].checked ==false&& x[4].checked ==false ){
+       
        y[9].style.display = "initial";
        y[10].style.display = "initial";
        y[11].style.display = "initial";
@@ -96,13 +101,13 @@ function a (){
         y[20].style.display = "initial";
         y[21].style.display = "initial";
         y[22].style.display = "initial";
-        y[23].style.display = "none";
+        y[23].style.display = "initial";
         y[24].style.display = "none";
         y[25].style.display = "none";
+        y[26].style.display = "none";
     }
 
-    else if (x== "lactose-intolerant and nut allergies"){
-       y[8].style.display = "initial";
+    else if (x[0].checked ==true && x[1].checked ==true && x[2].checked ==false && x[3].checked ==false&& x[4].checked ==false){
        y[9].style.display = "initial";
        y[10].style.display = "initial";
        y[11].style.display = "initial";
@@ -115,19 +120,19 @@ function a (){
        y[18].style.display = "initial";
         y[19].style.display = "initial";
         y[20].style.display = "initial";
-        y[21].style.display = "none";
+        y[21].style.display = "initial";
         y[22].style.display = "none";
         y[23].style.display = "none";
         y[24].style.display = "none";
         y[25].style.display = "none";
+        y[26].style.display = "none";
     }
 
-    else if (x =="organic"){
+    else if (x[0].checked ==false && x[1].checked ==false && x[2].checked ==true && x[3].checked ==false&& x[4].checked ==false){
       
-       y[8].style.display = "none";
        y[9].style.display = "none";
        y[10].style.display = "none";
-       y[11].style.display = "initial";
+       y[11].style.display = "none";
        y[12].style.display = "initial";
        y[13].style.display = "initial";
        y[14].style.display = "initial";
@@ -142,14 +147,15 @@ function a (){
        y[23].style.display = "initial";
        y[24].style.display = "initial";
        y[25].style.display = "initial";
+       y[26].style.display = "initial";
+       y[26].style.marginLeft  = "46%";
     }
 
-    else if (x =="organic and lactose-intolerant") {
+    else if (x[0].checked ==false && x[1].checked ==true && x[2].checked ==true && x[3].checked ==false&& x[4].checked ==false) {
       
-       y[8].style.display = "none";
-       y[9].style.display = "none";
+        y[9].style.display = "none";
        y[10].style.display = "none";
-       y[11].style.display = "initial";
+       y[11].style.display = "none";
        y[12].style.display = "initial";
        y[13].style.display = "initial";
        y[14].style.display = "initial";
@@ -159,40 +165,20 @@ function a (){
        y[18].style.display = "initial";
        y[19].style.display = "initial";
        y[20].style.display = "initial";
-       y[21].style.display = "none";
+       y[21].style.display = "initial";
        y[22].style.display = "none";
-       y[23].style.display = "initial";
+       y[23].style.display = "none";
        y[24].style.display = "initial";
        y[25].style.display = "initial";
+       y[26].style.display = "initial";
+       y[26].style.marginLeft  = "46%";
     }
 
-    else if (x == "organic and nut allergies"){
+    else if (x[0].checked ==true&& x[1].checked ==false && x[2].checked ==true && x[3].checked ==false&& x[4].checked ==false){ // organic and nut
        
-       y[8].style.display = "none";
-       y[9].style.display = "none";
-       y[10].style.display = "none";
-       y[11].style.display = "initial";
-       y[12].style.display = "initial";
-       y[13].style.display = "initial";
-       y[14].style.display = "initial";
-       y[15].style.display = "initial";
-       y[16].style.display = "initial";
-       y[17].style.display = "initial";
-       y[18].style.display = "initial";
-       y[19].style.display = "initial";
-       y[20].style.display = "initial";
-       y[21].style.display = "initial";
-       y[22].style.display = "initial";
-       y[23].style.display = "none";
-       y[24].style.display = "none";
-       y[25].style.display = "none";
-    }
-
-    else if (x== "organic and nut allergies and lactose-intolerant"){
-        y[8].style.display = "none";
         y[9].style.display = "none";
         y[10].style.display = "none";
-        y[11].style.display = "initial";
+        y[11].style.display = "none";
         y[12].style.display = "initial";
         y[13].style.display = "initial";
         y[14].style.display = "initial";
@@ -202,11 +188,33 @@ function a (){
         y[18].style.display = "initial";
         y[19].style.display = "initial";
         y[20].style.display = "initial";
-        y[21].style.display = "none";
+        y[21].style.display = "initial";
+        y[22].style.display = "initial";
+        y[23].style.display = "initial";
+        y[24].style.display = "none";
+        y[25].style.display = "none";
+        y[26].style.display = "none"
+    }
+
+    else if (x[0].checked ==true&& x[1].checked ==true && x[2].checked ==true && x[3].checked ==false && x[4].checked ==false){
+        y[9].style.display = "none";
+        y[10].style.display = "none";
+        y[11].style.display = "none";
+        y[12].style.display = "initial";
+        y[13].style.display = "initial";
+        y[14].style.display = "initial";
+        y[15].style.display = "initial";
+        y[16].style.display = "initial";
+        y[17].style.display = "initial";
+        y[18].style.display = "initial";
+        y[19].style.display = "initial";
+        y[20].style.display = "initial";
+        y[21].style.display = "initial";
         y[22].style.display = "none";
         y[23].style.display = "none";
         y[24].style.display = "none";
         y[25].style.display = "none";
+        y[26].style.display = "none"
 
     }
    
@@ -214,9 +222,30 @@ function a (){
 
     
 
-    else {
-       y[8].style.display = "initial";
-       y[9].style.display = "initial";
+    else if (x[3].checked ==true){
+        y[9].style.display = "initial";
+        y[10].style.display = "initial";
+        y[11].style.display = "initial";
+        y[12].style.display = "none";
+        y[13].style.display = "none";
+        y[14].style.display = "none";
+        y[15].style.display = "none";
+        y[16].style.display = "none";
+        y[17].style.display = "none";
+        y[18].style.display = "none";
+        y[19].style.display = "none";
+        y[20].style.display = "none";
+        y[21].style.display = "none";
+        y[22].style.display = "none";
+        y[23].style.display = "none";
+        y[24].style.display = "none";
+        y[25].style.display = "none";
+        y[26].style.display = "none";
+        
+    }
+
+    else if (x[0].checked ==true&& x[1].checked ==false && x[2].checked ==false && x[3].checked ==false && x[4].checked ==true){
+        y[9].style.display = "initial";
        y[10].style.display = "initial";
        y[11].style.display = "initial";
        y[12].style.display = "initial";
@@ -226,14 +255,79 @@ function a (){
        y[16].style.display = "initial";
        y[17].style.display = "initial";
        y[18].style.display = "initial";
-       y[19].style.display = "initial";
-       y[20].style.display = "initial";
-       y[21].style.display = "initial";
-       y[22].style.display = "initial";
-       y[23].style.display = "initial";
-       y[24].style.display = "initial";
-       y[25].style.display = "initial";
-        
+        y[19].style.display = "initial";
+        y[20].style.display = "initial";
+        y[21].style.display = "initial";
+        y[22].style.display = "initial";
+        y[23].style.display = "initial";
+        y[24].style.display = "none";
+        y[25].style.display = "none";
+        y[26].style.display = "none";
+    }
+
+    else if (x[0].checked ==true&& x[1].checked ==true && x[2].checked ==false && x[3].checked ==false && x[4].checked ==true){
+        y[9].style.display = "initial";
+       y[10].style.display = "initial";
+       y[11].style.display = "initial";
+       y[12].style.display = "initial";
+       y[13].style.display = "initial";
+       y[14].style.display = "initial";
+       y[15].style.display = "initial";
+       y[16].style.display = "initial";
+       y[17].style.display = "initial";
+       y[18].style.display = "initial";
+        y[19].style.display = "initial";
+        y[20].style.display = "initial";
+        y[21].style.display = "initial";
+        y[22].style.display = "none";
+        y[23].style.display = "none";
+        y[24].style.display = "none";
+        y[25].style.display = "none";
+        y[26].style.display = "none";
+    }
+
+    else if (x[0].checked ==false&& x[1].checked ==true && x[2].checked ==false && x[3].checked ==false && x[4].checked ==true){
+        y[9].style.display = "initial";
+       y[10].style.display = "initial";
+       y[11].style.display = "initial";
+       y[12].style.display = "initial";
+       y[13].style.display = "initial";
+       y[14].style.display = "initial";
+       y[15].style.display = "initial";
+       y[16].style.display = "initial";
+       y[17].style.display = "initial";
+       y[18].style.display = "initial";
+        y[19].style.display = "initial";
+        y[20].style.display = "initial";
+        y[21].style.display = "initial";
+        y[22].style.display = "none";
+        y[23].style.display = "none";
+        y[24].style.display = "initial";
+        y[25].style.display = "initial";
+        y[26].style.display = "initial";
+        y[26].style.marginLeft  = "46%";
+    }
+
+    else {
+        y[9].style.display = "initial";
+        y[10].style.display = "initial";
+        y[11].style.display = "initial";
+        y[12].style.display = "initial";
+        y[13].style.display = "initial";
+        y[14].style.display = "initial";
+        y[15].style.display = "initial";
+        y[16].style.display = "initial";
+        y[17].style.display = "initial";
+        y[18].style.display = "initial";
+         y[19].style.display = "initial";
+         y[20].style.display = "initial";
+         y[21].style.display = "initial";
+         y[22].style.display = "initial";
+         y[23].style.display = "initial";
+         y[24].style.display = "initial";
+         y[25].style.display = "initial";
+         y[26].style.display = "initial";
+         y[26].style.marginLeft  = "46%";
     }
 
     }

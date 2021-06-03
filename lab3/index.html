@@ -19,7 +19,7 @@
     <body>
 
         <div class="container">
-            <img src="images/foodimage.jpg"> 
+            <img class="food" src="images/foodimage.jpg"> 
             <h1 class="header"> Welcome to the Fresh Food Deluxe!</h1>
         </div>
 
@@ -57,8 +57,28 @@
 
             <h1>Tell us a bit about yourself</h1>
 
+            <br>
 
-            <div class="dropdown">
+            <div class="restrictions" >
+                <label class="do">Do you have any dietary restrictions?</label> <br> <br>
+                <input type="checkbox" value= "nut" id="nut">
+                <label>Nut Allergies</label> <br>
+                <input type="checkbox" value="lactose" id="lactose">
+                <label>Lactose-intolerant</label>
+            </div>
+
+            <br>
+
+            <div class="restrictions">
+                <label class="do">What is your produce preference?</label> <br><br>
+                <input type = "radio" name="restrictions" value="yesorganic" id="yesorganic">
+                <label>Organic products</label> <br>
+                <input type = "radio" name="restrictions" value="noorganic" id="noorganic">
+                <label>No Organic Products</label> <br>
+                <input type="radio" name="restrictions" value="no" id="no">
+                <label>No Preference</label>
+            </div>
+            <!-- <div class="dropdown">
                 <label>Choose a category:</label>  </br> </br>
                 <select  id="options">
                     <option label="Please Select" value="Please Select"></option>
@@ -71,7 +91,7 @@
                     <option value="None" selected >None</option>
                     <option value="organic and nut allergies and lactose-intolerant">organic and nut allergies and lactose-intolerant</option>
                 </select>
-            </div>
+            </div> -->
 
             </br>
             
