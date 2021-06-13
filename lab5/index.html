@@ -207,21 +207,21 @@
                 <div id="fname">
                     <label>Enter your First Name: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
                     </div>
                 </div>
 
                 <div id="lname">
                     <label>Enter your Last Name: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
                     </div>
                 </div>
 
                 <div id="email">
                     <label>Enter your Email: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
                     </div>
                 </div>
 
@@ -256,8 +256,7 @@
                 <div class="row gy-3">
                     <div class="col-md-6">
                       <label for="cc-name" class="form-label">Name on card</label>
-                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                      <small class="text-muted">Full name as displayed on card</small>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="Full name as displayed on card" required>
                       <div class="invalid-feedback">
                         Name on card is required
                       </div>
@@ -265,23 +264,15 @@
         
                     <div class="col-md-6">
                       <label for="cc-number" class="form-label">Credit card number</label>
-                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                      <input type="text" class="form-control" id="cc-number" placeholder="XXXX-XXXX-XXXX-XXX" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your credit card number and other personal information in case of a last minute cancellation and remember to put dashes in between four numbers" required>
                       <div class="invalid-feedback">
                         Credit card number is required
                       </div>
                     </div>
         
                     <div class="col-md-3">
-                      <label for="cc-expiration" class="form-label">Expiration</label>
-                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Expiration date required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3">
                       <label for="cc-cvv" class="form-label">CVV</label>
-                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="This is three digit number located at the back of your credit card" required>
                       <div class="invalid-feedback">
                         Security code required
                       </div>
