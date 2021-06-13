@@ -2,14 +2,67 @@
 
 body {
     font-family: sans-serif;
+
 }
+
+a:hover {
+    text-decoration: underline; 
+ }
+
+
+
+
 
 
 
 
 #a {
-    margin-right: 220px;
+    margin-right: 750px;
+    display: inline;
+    
 }
+
+#c {
+    position:absolute;
+    display: inline;
+    margin-left: 45%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#d  {
+    position:absolute;
+    display: inline;
+    margin-left: 53%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#e  {
+    position:absolute;
+    display: inline;
+    margin-left: 61%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#f {
+    position:absolute;
+    display: inline;
+    margin-left: 71%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#g  {
+    position:absolute;
+    display: inline;
+    margin-left: 89%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+
 
 #physician1 {
     margin-left: -6%;

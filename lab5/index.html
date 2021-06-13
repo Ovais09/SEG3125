@@ -15,12 +15,20 @@
 
     <body>
         
+        <nav class="navbar bg-dark text-white p-3 w-150">
+            <img src="images/logo.png" height="75" width="75">
+                <h3 id="a">Welcome to the Physio Vision Center! </h3>
+                <a class="navbar-brand text-white nav-link" href="#services" id="c">Services</a>
+                <a class="navbar-brand text-white nav-link" href="#choose" id="d">Choose</a>
+                <a class="navbar-brand text-white nav-link" href="#servicePhysician" id="e">Physicians</a>
+                <a class="navbar-brand text-white nav-link" href="#personalInformation" id="f">Personal Information</a>
+                <a class="navbar-brand text-white nav-link" href="#payment" id="g">Payment</a>
+        </nav>
 
         <div class="container">
-            <nav class="navbar bg-dark text-white p-3 my-3 ">
-                <img src="images/logo.png" height="75" width="75">
-                <h1 id="a">Welcome to the Physio Vision Center!</h1>
-            </nav>
+
+           
+
 
             <nav class="navbar navbar-light bg-light">
                 <h3>We are located at 75 Laurier Ave. E, Ottawa, ON K1N 6N5 <br> We also provide excellent customer service that will restore your health immediately</h3> 
@@ -53,46 +61,71 @@
             </div>
 
             <nav class="navbar bg-dark text-white p-3 my-3 ">
-                <h1>We offer 5 main services to our customers </h1>
+                <h1 id="services">We offer 5 main services to our customers </h1>
             </nav>
 
-            <table class="table table-info table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col"><h2>Service</h2></th>
-                        <th scope="col"><h2>Description</h2></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1. Soft Tissue Mobilization ($20)</td>
-                        <td>Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Electrotherapy ($50)</td>
-                        <td>In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</td>
-                    </tr>
-                    <tr>
-                        <td>3. Cryotherapy and Heat Therapy ($35)</td>
-                        <td>If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Kinesio Taping ($67)</td>
-                        <td>Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</td>
-                    </tr>
-                    <tr>
-                        <td>5. Therapeutic Ultrasound ($56)</td>
-                        <td>Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        
-        
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            1. Soft Tissue Mobilization ($20)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            2. Electrotherapy ($50)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            3. Cryotherapy and Heat Therapy ($35)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            4. Kinesio Taping ($67)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            5. Therapeutic Ultrasound ($56)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</div>
+                    </div>
+                </div>
+            </div>
+            
+                
+                    
+                        
+                      
+                    
 
 
             <nav class="navbar bg-dark text-white p-3 my-3 ">
-                <h1>Choose a service to get started! </h1>
+                <h1 id="choose">Choose a service to get started! </h1>
             </nav> <br>
 
             <div class="btn-group-vertical w-50" role="group" aria-label="Basic radio toggle button group">
@@ -126,7 +159,7 @@
 
             <div id="physicians">
 
-                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                <nav class="navbar bg-dark text-white p-3 my-3" id="servicePhysician">
                     <h1>Now choose the physician you want to have your service with!</h1>
                 </nav> <br>
 
