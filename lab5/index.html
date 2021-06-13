@@ -8,6 +8,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="styles/index.css" rel="stylesheet">
         <link rel= "icon" href="images/logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="scripts/physiciansVisibility.js"></script>
         <title>Physio Vision Center</title>
     </head>
 
@@ -89,13 +91,15 @@
         
 
 
-              <h1>Choose a service to get started!</h1> <br>
+            <nav class="navbar bg-dark text-white p-3 my-3 ">
+                <h1>Choose a service to get started! </h1>
+            </nav> <br>
 
-              <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
+            <div class="btn-group-vertical w-50" role="group" aria-label="Basic radio toggle button group">
               
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btnradio1">1. Soft Tissue Mobilization</label>
-
+               
                 <br>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
@@ -115,40 +119,173 @@
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btnradio5">5. Therapeutic Ultrasound</label>
-              </div>
+            </div>
 
-              <div id="fname">
-                <label>Enter your First Name: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
+            <br>
+            <br>
+
+            <div id="physicians">
+
+                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                    <h1>Now choose the physician you want to have your service with!</h1>
+                </nav> <br>
+
+                <div class="row justify-content-around">
+                    <div class="card" style="width: 15rem;" id="physician1">
+                        <img class="card-img-top" src="images/physician1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Jotaro Kujo</h5>
+                          <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy</p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="jotaro" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="jotaro">Jotaro Kujo</label>
+                    </div>
+                    <div class="card" style="width: 15rem;" >
+                        <img class="card-img-top" height="160px" src="images/physician2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Joseph Joestar</h5>
+                            <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters </p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="joseph" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="joseph">Joseph Joestar</label>
+                    </div>
+                    <div class="card" style="width: 15rem;" >
+                        <img class="card-img-top" height="160px" src="images/physician3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Boa Hancock</h5>
+                            <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients!</p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="boa" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="boa">Boa Hancock</label>
+                    </div>
                 </div>
-              </div>
+    
+            </div>
 
-              <div id="lname">
-                <label>Enter your Last Name: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
+            <br>
+
+            <div id="personalInformation">
+
+                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                    <h1>Personal Information</h1>
+                </nav> <br>
+
+
+                <div id="fname">
+                    <label>Enter your First Name: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
+                    </div>
                 </div>
-              </div>
 
-              <div id="email">
-                <label>Enter your Email: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <div id="lname">
+                    <label>Enter your Last Name: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
+                    </div>
                 </div>
-              </div>
+
+                <div id="email">
+                    <label>Enter your Email: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+                <div id="datetime"> 
+                    <label for="meeting-time">Choose a date and time for your appointment:</label> <br>
+                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-06-14T19:30" min="2021-06-14T00:00" max="2022-06-28T00:00"> 
+                </div>
+                
+            </div>
+            
+
+            <div id="payment">
+                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                    <h1>Payment</h1>
+                </nav> <br>
+
+                <div class="my-3">
+                    <div class="form-check">
+                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+                      <label class="form-check-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                      <label class="form-check-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                      <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label for="cc-name" class="form-label">Name on card</label>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                      <small class="text-muted">Full name as displayed on card</small>
+                      <div class="invalid-feedback">
+                        Name on card is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                      <label for="cc-number" class="form-label">Credit card number</label>
+                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Credit card number is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="cc-expiration" class="form-label">Expiration</label>
+                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Expiration date required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="cc-cvv" class="form-label">CVV</label>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Security code required
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" id="checkout">Continue to checkout</button>
+    
+            </div>
+
+            <br>
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to submit?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <button name="yes" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
+            <h4 id="request">Your request has been submitted!</h4>
 
-
-              <div id="datetime"> 
-                <label for="meeting-time">Choose a date and time for your appointment:</label> <br>
-                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-06-14T19:30" min="2021-06-14T00:00" max="2022-06-28T00:00"> 
-              </div>
-
-              <br>
-              <br>
-              <br>
               <br>
 
               <footer class="footer mt-auto py-3 bg-dark">
@@ -163,12 +300,6 @@
 
         </div>
 
-
-
-        
-
-           
-        
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
     </body>
