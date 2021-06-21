@@ -10,6 +10,7 @@
         <link rel= "icon" href="images/logo.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="scripts/physiciansVisibility.js"></script>
+        <script src="scripts/verification.js"></script>
         <title>Physio Vision Center</title>
     </head>
 
@@ -41,21 +42,21 @@
                     <img class="card-img-top" src="images/physician1.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Jotaro Kujo</h5>
-                      <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy</p>
+                      <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy. He is available 24/7 from Sunday to Saturday everyday</p>
                     </div>
                 </div>
                 <div class="card" style="width: 15rem;" >
                     <img class="card-img-top" height="160px" src="images/physician2.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Joseph Joestar</h5>
-                        <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters </p>
+                        <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters. He is available 24/7 from Sunday to Saturday everyday </p>
                     </div>
                 </div>
                 <div class="card" style="width: 15rem;" >
                     <img class="card-img-top" height="160px" src="images/physician3.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Boa Hancock</h5>
-                        <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients!</p>
+                        <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients! She is available 24/7 from Sunday to Saturday everyday</p>
                     </div>
                 </div>
             </div>
@@ -207,21 +208,21 @@
                 <div id="fname">
                     <label>Enter your First Name: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
+                        <input type="text" maxLength="1000000000" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id="firstname">
                     </div>
                 </div>
 
                 <div id="lname">
                     <label>Enter your Last Name: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
+                        <input type="text" maxLength="1000000000" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id ="lastname">
                     </div>
                 </div>
 
                 <div id="email">
-                    <label>Enter your Email: </label>
+                    <label>Enter your Telephone number: </label>
                     <div class="input-group mb-3 w-50" >
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not">
+                        <input type="text" maxLength ="11" class="form-control" placeholder="xxx xxx xxx" aria-label="Phone Number" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id ="phone">
                     </div>
                 </div>
 
@@ -256,7 +257,7 @@
                 <div class="row gy-3">
                     <div class="col-md-6">
                       <label for="cc-name" class="form-label">Name on card</label>
-                      <input type="text" class="form-control" id="cc-name" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="Full name as displayed on card" required>
+                      <input type="text" id="nameoncard" maxLength="1000000000" class="form-control" id="cc-name" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="Full name as displayed on card" required >
                       <div class="invalid-feedback">
                         Name on card is required
                       </div>
@@ -264,7 +265,7 @@
         
                     <div class="col-md-6">
                       <label for="cc-number" class="form-label">Credit card number</label>
-                      <input type="text" class="form-control" id="cc-number" placeholder="XXXX-XXXX-XXXX-XXX" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your credit card number and other personal information in case of a last minute cancellation and remember to put dashes in between four numbers" required>
+                      <input maxLength ="19" type="text" class="form-control" id="cc-number" placeholder="XXXX XXXX XXXX XXXX" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your credit card number and other personal information in case of a last minute cancellation and remember to put a space in between four numbers" required>
                       <div class="invalid-feedback">
                         Credit card number is required
                       </div>
@@ -272,7 +273,7 @@
         
                     <div class="col-md-3">
                       <label for="cc-cvv" class="form-label">CVV</label>
-                      <input type="text" class="form-control" id="cc-cvv" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="This is three digit number located at the back of your credit card" required>
+                      <input type="text" maxLength = "3" class="form-control" id="cc-cvv" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="This is three digit number located at the back of your credit card" required>
                       <div class="invalid-feedback">
                         Security code required
                       </div>
@@ -281,7 +282,7 @@
 
                   <br>
 
-                <button class="w-100 btn btn-primary btn-lg" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" id="checkout">Continue to checkout</button>
+                <button onclick = "creditcardCheck()" class="w-100 btn btn-primary btn-lg" type="submit"  id="checkout">Continue to checkout</button>
     
             </div>
 
@@ -299,7 +300,7 @@
                         <div class="modal-body">
                             <div>
                                 <button name="yes" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                <button type="button" name="no" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
                             </div>
                         </div>
 

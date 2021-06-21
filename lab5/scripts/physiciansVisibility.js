@@ -1,4 +1,9 @@
+
+
+
+
 $(document).ready(function () {
+    
     $("#physicians").hide();
     $("#personalInformation").hide();
     $("#request").hide();
@@ -14,6 +19,63 @@ $(document).ready(function () {
         if ($("#jotaro").is(":checked") || $("#joseph").is(":checked") || $("#boa").is(":checked")){
             $("#personalInformation").show();
             $("#payment").show();
+
+            
+    function space(str, after) {
+        if (!str) {
+            return false;
+        }
+        after = after || 4;
+        var v = str.replace(/[^\dA-Z]/g, ''),
+            reg = new RegExp(".{" + after + "}", "g");
+        return v.replace(reg, function (a) {
+            return a + ' ';
+        });
+    }
+
+    function nospace(str, after) {
+        // if (!str) {
+        //     return false;
+        // }
+        after = after || 40000;
+        var v = str.replace(/[0-9`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g, ''),
+            reg = new RegExp(".{" + after + "}", "g");
+        return v.replace(reg, function (a) {
+            return a + ' ';
+        });
+    }
+
+    
+    var el = document.getElementById('cc-number');
+    el.addEventListener('keyup', function () {
+        this.value = space(this.value, 4);
+    });
+
+    var e2 = document.getElementById('cc-cvv');
+    e2.addEventListener('keyup', function () {
+        this.value = space(this.value, 0);
+    });
+
+    var e3 = document.getElementById("phone");
+    e3.addEventListener('keyup', function () {
+        this.value = space(this.value, 3);
+    })
+
+    var e4 = document.getElementById("firstname")
+    e4.addEventListener('keyup', function () {
+        this.value = nospace(this.value, 0);
+    })
+
+    var e5 = document.getElementById("lastname")
+    e5.addEventListener('keyup', function () {
+        this.value = nospace(this.value, 0);
+    })
+
+    var e6 = document.getElementById("nameoncard")
+    e6.addEventListener('keyup', function () {
+        this.value = nospace(this.value, 0);
+    })
+            
         }
     })
 
@@ -22,4 +84,14 @@ $(document).ready(function () {
         $("#request").show();
     })
 
-})
+    $("button[name='no']").click(function () {
+        document.getElementById("cc-number").value = ""
+    }
+    )
+
+}
+
+
+    
+)
+
