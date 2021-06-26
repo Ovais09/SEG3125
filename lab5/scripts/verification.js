@@ -1,11 +1,9 @@
 function creditcardCheck () {
 
-    var x  = document.getElementById("cc-number").value;
-    var y = document.getElementById("cc-cvv").value;
-    var z = document.getElementById("phone").value
-    var e4 = document.getElementById("firstname").value;
-    var e5 = document.getElementById("lastname").value;
-    var e6 = document.getElementById("nameoncard").value;
+    var x  = document.getElementById("cc-number");
+    var y = document.getElementById("cc-cvv");
+    var z = document.getElementById("phone");
+   
 
     var credit = document.getElementById("credit");
     var debit = document.getElementById("debit");
@@ -17,10 +15,7 @@ function creditcardCheck () {
 
 
 
-    var regExp = /[a-zA-Z`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g;
-    
-
-    if (x.length <19 || y.value<3 || z.value <11 || e41.length==0 || e51.length==0 || e61.value == 0 || ((credit.checked==false) && (debit.checked==false) && (paypal.checked ==false)) ){
+    if (x.value.length <19 || y.value.length<3 || z.value.length <11 || e41.value.length == 0 || e51.value.length== 0 || e61.value.length == 0 || ((credit.checked==false) && (debit.checked==false) && (paypal.checked ==false)) ){
 
 
         if ((credit.checked==false) && (debit.checked==false) && (paypal.checked ==false))  {
@@ -28,43 +23,24 @@ function creditcardCheck () {
         }
 
 
-        if (z.value <11) {
+        if (z.value.length <11) {
             alert("please enter a phone number that matches the placeholder");
-            var x  = document.getElementById("cc-number").value = "";
-            var y = document.getElementById("cc-cvv").value = ""
-            var z = document.getElementById("phone").value = ""
-            var e4 = document.getElementById("firstname").value = ""
-            var e5 = document.getElementById("lastname").value = ""
-            var e6 = document.getElementById("nameoncard").value = ""
         }
 
-        if (e41.length==0 || e51.length==0 || e61.value == 0){
+        if (e41.value.length == 0 || e51.value.length == 0 || e61.value.length == 0){
             alert("please enter a proper name");
-            var x  = document.getElementById("cc-number").value = "";
-            var y = document.getElementById("cc-cvv").value = ""
-            var z = document.getElementById("phone").value = ""
-            var e4 = document.getElementById("firstname").value = ""
-            var e5 = document.getElementById("lastname").value = ""
-            var e6 = document.getElementById("nameoncard").value = ""
         }
 
-        else {
-            console.log("stupid")
-        alert("please enter your credit card again");
-        var x  = document.getElementById("cc-number").value = "";
-            var y = document.getElementById("cc-cvv").value = ""
-            var z = document.getElementById("phone").value = ""
-            var e4 = document.getElementById("firstname").value = ""
-            var e5 = document.getElementById("lastname").value = ""
-            var e6 = document.getElementById("nameoncard").value = ""
+        if (x.value.length <19 || y.value.length<3) {
+            alert("please enter your credit card again");
         }
 
-        
-
-
-    if (regExp.test(x)){
-        
-    }
+        document.getElementById("cc-number").value = "";
+        document.getElementById("cc-cvv").value = ""
+        document.getElementById("phone").value = ""
+        document.getElementById("firstname").value = ""
+        document.getElementById("lastname").value = ""
+        document.getElementById("nameoncard").value = ""
 
   
   
