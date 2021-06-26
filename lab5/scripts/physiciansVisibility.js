@@ -81,9 +81,11 @@ $(document).ready(function () {
 
     $("button[name='yes']").click(function () {
         $("#checkout").remove();
+        
+
+        $("#request").html("Your request to have an appointment with " +  $("input[name='physicians']:checked").val() + " on " + $("#meeting-time").val().replace("T", " ") + " has been submitted" ) ;
         $("#request").show();
     })
-
     $("button[name='no']").click(function () {
         document.getElementById("cc-number").value = ""
     }
