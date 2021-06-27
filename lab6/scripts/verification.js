@@ -27,7 +27,7 @@ function creditcardCheck () {
             alert("please enter a phone number that is not empty");
         }
 
-        if (z.value.length < 11) {
+        if (z.value.length < 11 && z.value.length > 0 ) {
             alert("The phone number that you entered is too short, please enter a phone number that matches the place holder (XXX XXX XXX) ")
         }
 
@@ -39,7 +39,7 @@ function creditcardCheck () {
             alert ("Cannot enter an empty card number, please enter a card number");
         }
 
-        if (x.value.length <19){
+        if (x.value.length <19 && x.value.length > 0){
             alert("The card number that you have entered is too short, please enter a card number that matches the placeholder (XXXX XXXX XXXX XXXX)");
         }
 
@@ -47,7 +47,7 @@ function creditcardCheck () {
             alert("Cannot enter an empty CVV, please enter your CVV")
         }
             
-        if (y.value.length<3){
+        if (y.value.length<3 && y.value.length > 0){
             alert("The CVV that you entered is too short, please enter your CVV again")
         }
 
