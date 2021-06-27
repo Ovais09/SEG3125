@@ -1,0 +1,159 @@
+
+
+body {
+    font-family: sans-serif;
+
+}
+
+a:hover {
+    text-decoration: underline; 
+ }
+
+
+#a {
+    margin-right: 73%;
+    display: inline;
+    
+}
+
+#c {
+    position:absolute;
+    display: inline;
+    margin-left: 34%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#d  {
+    position:absolute;
+    display: inline;
+    margin-left: 46%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#e  {
+    position:absolute;
+    display: inline;
+    margin-left: 59%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#f {
+    position:absolute;
+    display: inline;
+    margin-left: 72.5%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+#g  {
+    position:absolute;
+    display: inline;
+    margin-left: 89.5%;
+    margin-top: -0.5%;
+    font-size: 150%;
+}
+
+
+
+#physician1 {
+    margin-left: -6%;
+}
+
+
+
+
+#b {
+    margin-left: 38%;
+}
+
+.serviceicon {
+    position: absolute;
+    margin-left: -2%;
+    margin-top: 0%;
+}
+
+
+t {
+    margin-left: 5%;
+}
+
+.paymenticon {
+    position: absolute;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+#position {
+    position: absolute;
+    margin-left: 8%;
+}
+
+#paypalposition {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+#paypalimage {
+    position: absolute;
+    margin-left: -2%;
+    margin-top: 1%;
+}
+
+#service {
+    position: absolute;
+    margin-left: 30%;
+}
+
+#selection {
+    position: absolute;
+    margin-left: 42.5%;
+}
+
+#physiciansicon {
+    position: absolute;
+    margin-left: 55%;
+}
+
+#personalinfo {
+    position: absolute;
+    margin-left: 69%;
+}
+
+#paymenticon {
+    position: absolute;
+    margin-left: 85.5%;
+}
+
+#services {
+    position: absolute;
+    margin-left: 6.5%;
+}
+
+#choose {
+    position: absolute;
+    margin-left: 6.5%;
+}
+
+#p {
+    position: absolute;
+    margin-left: 6.5%;
+}
+
+#pe {
+    position: absolute;
+    margin-left: 6.5%;
+}
+
+#noy {
+    position: absolute;
+    margin-left: 6.5%;
+}
+
+
+
+
+
