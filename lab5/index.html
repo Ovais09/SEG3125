@@ -18,11 +18,16 @@
         
         <nav class="navbar bg-dark text-white p-3 w-150">
             <img src="images/logo.png" height="75" width="75">
-                <h3 id="a">Welcome to the Physio Vision Center! </h3>
+                <h3 id="a">Physio Vision Center</h3>
+                <img src = "images/service.png" height = "60" width = "60" id = "service">
+                <img src = "images/selection.png" height = "75" width = "60" id = "selection">
+                <img src = "images/physicians.png" height = "60" width = "60" id = "physiciansicon">
+                <img src = "images/personalinfo.png" height = "60" width = "60" id = "personalinfo">
+                <img src = "images/paymenticon.png" height = "60" width = "60" id = "paymenticon">
                 <a class="navbar-brand text-white nav-link" href="#services" id="c">Services</a>
-                <a class="navbar-brand text-white nav-link" href="#choose" id="d">Choose</a>
+                <a class="navbar-brand text-white nav-link" href="#choose" id="d">Selection</a>
                 <a class="navbar-brand text-white nav-link" href="#servicePhysician" id="e">Physicians</a>
-                <a class="navbar-brand text-white nav-link" href="#personalInformation" id="f">Personal Information</a>
+                <a class="navbar-brand text-white nav-link" href="#personalInformation" id="f">Personal Data</a>
                 <a class="navbar-brand text-white nav-link" href="#payment" id="g">Payment</a>
         </nav>
 
@@ -69,7 +74,8 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            1. Soft Tissue Mobilization ($20)
+                            <img src="images/tissue2.png"  class = "serviceicon" height = "50" width="75">
+                            <t> 1. Soft Tissue Mobilization ($20)</t>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -79,7 +85,9 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            2. Electrotherapy ($50)
+                            <img src="images/electro.jpg"  class = "serviceicon" height = "50" width="75">
+                           <t>2. Electrotherapy ($50)</t>
+                           
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -89,7 +97,8 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            3. Cryotherapy and Heat Therapy ($35)
+                            <img src ="images/cryoheat.jpg" height="50" width="78" class = "serviceicon" >
+                           <t>3. Cryotherapy and Heat Therapy ($35)</t> 
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -99,7 +108,8 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            4. Kinesio Taping ($67)
+                            <img src ="images/kinesio.png" height="50" width="78" class = "serviceicon" >
+                            <t>4. Kinesio Taping ($67)</t>
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -109,7 +119,8 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                            5. Therapeutic Ultrasound ($56)
+                            <img src ="images/ultrasound.jpg" height="50" width="78" class = "serviceicon" >
+                            <t>5. Therapeutic Ultrasound ($56)</t>
                         </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -131,27 +142,27 @@
 
             <div class="btn-group-vertical w-50" role="group" aria-label="Basic radio toggle button group">
               
-                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off">
+                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" value = "Soft Tissue Mobilization">
                 <label class="btn btn-outline-primary" for="btnradio1">1. Soft Tissue Mobilization</label>
                
                 <br>
               
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value = "Electrotherapy">
                 <label class="btn btn-outline-primary" for="btnradio2">2. Electrotherapy</label>
 
                 <br>
               
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value = "Cryotherapy and Heat Therapy" >
                 <label class="btn btn-outline-primary" for="btnradio3">3. Cryotherapy and Heat Therapy</label>
 
                 <br>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" value = "Kinesio Taping">
                 <label class="btn btn-outline-primary" for="btnradio4">4. Kinesio Taping</label>
 
                 <br>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" value = "Therapeutic Ultrasound" >
                 <label class="btn btn-outline-primary" for="btnradio5">5. Therapeutic Ultrasound</label>
             </div>
 
@@ -241,18 +252,24 @@
 
                 <div class="my-3">
                     <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
-                      <label class="form-check-label" for="credit">Credit card</label>
+                      <img src = "images/credit.png" height = "80" width = "80" class="paymenticon">
+                      <span id = "position">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="credit">Credit card</label>
+                      </span>
                     </div>
                     <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                      <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                      <label class="form-check-label" for="paypal">PayPal</label>
+                        <img src = "images/paypal.png" height = "80" width = "80" id = "paypalimage">
+                        <span id = "paypalposition">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </span>
                     </div>
                 </div>
+
+                <br>
+                <br>
+                <br>
 
                 <div class="row gy-3">
                     <div class="col-md-6">
@@ -264,10 +281,10 @@
                     </div>
         
                     <div class="col-md-6">
-                      <label for="cc-number" class="form-label">Credit card number</label>
+                      <label for="cc-number" class="form-label">Card number</label>
                       <input maxLength ="19" type="text" class="form-control" id="cc-number" placeholder="XXXX XXXX XXXX XXXX" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your credit card number and other personal information in case of a last minute cancellation and remember to put a space in between four numbers" required>
                       <div class="invalid-feedback">
-                        Credit card number is required
+                        Card number is required
                       </div>
                     </div>
         

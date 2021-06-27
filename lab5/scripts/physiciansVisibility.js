@@ -83,7 +83,7 @@ $(document).ready(function () {
         $("#checkout").remove();
         
 
-        $("#request").html("Your request to have an appointment with " +  $("input[name='physicians']:checked").val() + " on " + $("#meeting-time").val().replace("T", " ") + " has been submitted" ) ;
+        $("#request").html("Your request to have an appointment with " +  $("input[name='physicians']:checked").val() + " on " + $("#meeting-time").val().replace("T", " ") + ", for the service of : " + $("input[name='btnradio']:checked").val() + " has been submitted" ) ;
         $("#request").show();
     })
     $("button[name='no']").click(function () {

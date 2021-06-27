@@ -6,7 +6,6 @@ function creditcardCheck () {
    
 
     var credit = document.getElementById("credit");
-    var debit = document.getElementById("debit");
     var paypal = document.getElementById("paypal");
 
     var e41 = document.getElementById("firstname")
@@ -15,10 +14,10 @@ function creditcardCheck () {
 
 
 
-    if (x.value.length <19 || y.value.length<3 || z.value.length <11 || e41.value.length == 0 || e51.value.length== 0 || e61.value.length == 0 || ((credit.checked==false) && (debit.checked==false) && (paypal.checked ==false)) ){
+    if (x.value.length <19 || y.value.length<3 || z.value.length <11 || e41.value.length == 0 || e51.value.length== 0 || e61.value.length == 0 || ((credit.checked==false) && (paypal.checked ==false)) ){
 
 
-        if ((credit.checked==false) && (debit.checked==false) && (paypal.checked ==false))  {
+        if ((credit.checked==false) && (paypal.checked ==false))  {
             alert("please select a payment method");
         }
 
