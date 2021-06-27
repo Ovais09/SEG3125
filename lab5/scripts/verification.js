@@ -22,16 +22,33 @@ function creditcardCheck () {
         }
 
 
-        if (z.value.length <11) {
-            alert("please enter a phone number that matches the placeholder");
+        if (z.value.length == 0) {
+
+            alert("please enter a phone number that is not empty");
+        }
+
+        if (z.value.length < 11) {
+            alert("The phone number that you entered is too short, please enter a phone number that matches the place holder (XXX XXX XXX) ")
         }
 
         if (e41.value.length == 0 || e51.value.length == 0 || e61.value.length == 0){
-            alert("please enter a proper name");
+            alert("Cannot enter an empty name, please enter a proper name");
         }
 
-        if (x.value.length <19 || y.value.length<3) {
-            alert("please enter your credit card again");
+        if (x.value.length == 0) {
+            alert ("Cannot enter an empty card number, please enter a card number");
+        }
+
+        if (x.value.length <19){
+            alert("The card number that you have entered is too short, please enter a card number that matches the placeholder (XXXX XXXX XXXX XXXX)");
+        }
+
+        if (x.value.length == 0) {
+            alert("Cannot enter an empty CVV, please enter your CVV")
+        }
+            
+        if (y.value.length<3){
+            alert("The CVV that you entered is too short, please enter your CVV again")
         }
 
         document.getElementById("cc-number").value = "";
