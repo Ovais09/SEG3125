@@ -5,6 +5,15 @@ import Step3 from "./Step3";
 import Stopwatch from './watch.js';
 import Stopwatch2 from './watch2.js';
 import {useState } from "react";
+
+
+import Math from "../website_images/math.png";
+import Science from "../website_images/science.png";
+import pll from "../website_images/pli.jfif";
+import lll from "../website_images/lll.png";
+import geo from "../website_images/geo.png";
+import hi from "../website_images/hi.png";
+
 import "./Step1.css"
 import "./Step2.css"
 
@@ -45,6 +54,8 @@ function Step1 () {
     document.getElementById("lname").style.display = "none";
 
     document.getElementById("next").style.display = "none";
+
+    document.getElementById("french").style.display = "none";
     
     
     
@@ -57,6 +68,7 @@ function Step1 () {
             <h1 className = "please">Veuillez sélectionner les matières pour lesquelles vous souhaitez être testé</h1>
 
             <h1 className = "math">Math</h1>
+            <img src ={Math} alt = "math" height="50px" width="50" id = "math"></img>
             <input type = "checkbox" className = "mathc"></input>
             <label>Algèbre linéaire</label>
             <br></br>
@@ -71,6 +83,7 @@ function Step1 () {
             <br></br>
 
             <h1 className = "science">les sciences</h1>
+            <img src ={Science} alt = "science" height="50px" width="50" id = "sciencee"></img>
             <input type = "checkbox" className = "sciencec" id = "chemistry"></input>
             <label className = "sc" >Chimie</label>
             <br></br>
@@ -85,7 +98,8 @@ function Step1 () {
             <br></br>
 
 
-            <h1 className = "pl">Langages de programmation</h1>
+            <h1 className = "pl">Langue de programmation</h1>
+            <img src ={pll} alt = "math" height="50px" width="50" id = "plll"></img>
             <input type = "checkbox" className = "plc"></input>
             <label className = "pll">Java</label>
             <br></br>
@@ -101,6 +115,7 @@ function Step1 () {
 
 
             <h1 className = "ll">Langues linguistiques</h1>
+            <img src ={lll} alt = "math" height="50px" width="50" id = "lll"></img>
             <input type = "checkbox" className = "llc"></input>
             <label className = "lll">Anglaise</label>
             <br></br>
@@ -114,7 +129,8 @@ function Step1 () {
             <label className = "lll">Italienne</label>
             <br></br>
 
-            <h1 className = "ge">La géographie</h1>
+            <h1 className = "ge">Géographie</h1>
+            <img src ={geo} alt = "math" height="50px" width="50" id = "geoo"></img>
             <input type = "checkbox" className = "gec"></input>
             <label className = "gel">Géographie humaine</label>
             <br></br>
@@ -129,6 +145,7 @@ function Step1 () {
             <br></br>
 
             <h1 className = "hi">Histoire</h1>
+            <img src ={hi} alt = "math" height="50px" width="50" id = "hi"></img>
             <input type = "checkbox" className = "hic"></input>
             <label className = "hil">Histoire politique</label>
             <br></br>
@@ -158,10 +175,13 @@ function Step1 () {
 
 
     return (
+
+
         <div>
             <h1 className = "please">Please select which subjects you would like to be tested from</h1>
 
             <h1 className = "math">Math</h1>
+            <img src ={Math} alt = "math" height="50px" width="50" id = "math"></img>
             <input type = "checkbox" className = "mathc"></input>
             <label>Linear Algebra</label>
             <br></br>
@@ -176,6 +196,7 @@ function Step1 () {
             <br></br>
 
             <h1 className = "science">Sciences</h1>
+            <img src ={Science} alt = "science" height="50px" width="50" id = "science"></img>
             <input type = "checkbox" className = "sciencec" id = "chemistry"></input>
             <label className = "sc" >Chemistry</label>
             <br></br>
@@ -191,6 +212,7 @@ function Step1 () {
 
 
             <h1 className = "pl">Programming Languages</h1>
+            <img src ={pll} alt = "math" height="50px" width="50" id = "pll"></img>
             <input type = "checkbox" className = "plc"></input>
             <label className = "pll">Java</label>
             <br></br>
@@ -206,6 +228,7 @@ function Step1 () {
 
 
             <h1 className = "ll">Linguistic Languages</h1>
+            <img src ={lll} alt = "math" height="50px" width="50" id = "lll"></img>
             <input type = "checkbox" className = "llc"></input>
             <label className = "lll">English</label>
             <br></br>
@@ -220,6 +243,7 @@ function Step1 () {
             <br></br>
 
             <h1 className = "ge">Geography</h1>
+            <img src ={geo} alt = "math" height="50px" width="50" id = "geo"></img>
             <input type = "checkbox" className = "gec"></input>
             <label className = "gel">Human Geography</label>
             <br></br>
@@ -234,6 +258,7 @@ function Step1 () {
             <br></br>
 
             <h1 className = "hi">History</h1>
+            <img src ={hi} alt = "math" height="50px" width="50" id = "hi"></img>
             <input type = "checkbox" className = "hic"></input>
             <label className = "hil">Political History</label>
             <br></br>
