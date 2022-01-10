@@ -1,177 +1,291 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="styles/index.css" rel="stylesheet" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Physio Vision Center</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link href="styles/index.css" rel="stylesheet">
-        <link rel= "icon" href="images/logo.png">
-        <title>Physio Vision Center</title>
-    </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg-dark text-white p-3 my-3">
+        <img src="images/logo.png" height="75" width="75" />
+        <h1 id="a">Welcome to the Physio Vision Center!</h1>
+      </nav>
 
-    <body>
-        
+      <nav class="navbar navbar-light bg-light">
+        <h3>
+          We are located at 75 Laurier Ave. E, Ottawa, ON K1N 6N5 <br />
+          We also provide excellent customer service that will restore your
+          health immediately
+        </h3>
+      </nav>
+      <br />
 
-        <div class="container">
-            <nav class="navbar bg-dark text-white p-3 my-3 ">
-                <img src="images/logo.png" height="75" width="75">
-                <h1 id="a">Welcome to the Physio Vision Center!</h1>
-            </nav>
+      <h1>Meet the Physicians!</h1>
 
-            <nav class="navbar navbar-light bg-light">
-                <h3>We are located at 75 Laurier Ave. E, Ottawa, ON K1N 6N5 <br> We also provide excellent customer service that will restore your health immediately</h3> 
-            </nav> <br>
-
-            <h1>Meet the Physicians!</h1>
-
-            <div class="row justify-content-around">
-                <div class="card" style="width: 15rem;" id="physician1">
-                    <img class="card-img-top" src="images/physician1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Jotaro Kujo</h5>
-                      <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 15rem;" >
-                    <img class="card-img-top" height="160px" src="images/physician2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Joseph Joestar</h5>
-                        <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 15rem;" >
-                    <img class="card-img-top" height="160px" src="images/physician3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Boa Hancock</h5>
-                        <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients!</p>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="navbar bg-dark text-white p-3 my-3 ">
-                <h1>We offer 5 main services to our customers </h1>
-            </nav>
-
-            <table class="table table-info table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col"><h2>Service</h2></th>
-                        <th scope="col"><h2>Description</h2></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1. Soft Tissue Mobilization ($20)</td>
-                        <td>Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Electrotherapy ($50)</td>
-                        <td>In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</td>
-                    </tr>
-                    <tr>
-                        <td>3. Cryotherapy and Heat Therapy ($35)</td>
-                        <td>If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Kinesio Taping ($67)</td>
-                        <td>Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</td>
-                    </tr>
-                    <tr>
-                        <td>5. Therapeutic Ultrasound ($56)</td>
-                        <td>Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        
-        
-
-
-              <h1>Choose a service to get started!</h1> <br>
-
-              <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
-              
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio1">1. Soft Tissue Mobilization</label>
-
-                <br>
-              
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio2">2. Electrotherapy</label>
-
-                <br>
-              
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio3">3. Cryotherapy and Heat Therapy</label>
-
-                <br>
-
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio4">4. Kinesio Taping</label>
-
-                <br>
-
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio5">5. Therapeutic Ultrasound</label>
-              </div>
-
-              <div id="fname">
-                <label>Enter your First Name: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
-                </div>
-              </div>
-
-              <div id="lname">
-                <label>Enter your Last Name: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
-                </div>
-              </div>
-
-              <div id="email">
-                <label>Enter your Email: </label>
-                <div class="input-group mb-3 w-50" >
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                </div>
-              </div>
-
-
-
-
-              <div id="datetime"> 
-                <label for="meeting-time">Choose a date and time for your appointment:</label> <br>
-                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-06-14T19:30" min="2021-06-14T00:00" max="2022-06-28T00:00"> 
-              </div>
-
-              <br>
-              <br>
-              <br>
-              <br>
-
-              <footer class="footer mt-auto py-3 bg-dark">
-                <div class="container"> 
-                    <span class="text-white" id = "b">Site created by Giorno Giovanna</span>
-                </div>
-              </footer>
-
-              <br>
-              <br>
-
-
+      <div class="row justify-content-around">
+        <div class="card" style="width: 15rem" id="physician1">
+          <img
+            class="card-img-top"
+            src="images/physician1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Jotaro Kujo</h5>
+            <p class="card-text">
+              Jotaro has 10 years of physiotherapy experience and has a PhD in
+              physiotherapy
+            </p>
+          </div>
         </div>
+        <div class="card" style="width: 15rem">
+          <img
+            class="card-img-top"
+            height="160px"
+            src="images/physician2.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Joseph Joestar</h5>
+            <p class="card-text">
+              Joseph has a masters in physiotherapy and went to the University
+              of Ottawa for his undergrad and the University of Waterloo for his
+              masters
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 15rem">
+          <img
+            class="card-img-top"
+            height="160px"
+            src="images/physician3.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Boa Hancock</h5>
+            <p class="card-text">
+              Boa has worked in this clinic for over 20 years and has helped
+              well over 5000 patients!
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <nav class="navbar bg-dark text-white p-3 my-3">
+        <h1>We offer 5 main services to our customers</h1>
+      </nav>
 
+      <table class="table table-info table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><h2>Service</h2></th>
+            <th scope="col"><h2>Description</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Soft Tissue Mobilization ($20)</td>
+            <td>
+              Also referred to as therapeutic massage, soft tissue mobilization
+              can help relax a patient’s muscles and reduce swelling in certain
+              areas, making this treatment excellent for relieving pain
+              associated with athletic injuries.
+            </td>
+          </tr>
+          <tr>
+            <td>2. Electrotherapy ($50)</td>
+            <td>
+              In this form of treatment, electrical stimulation is provided by
+              attaching electrodes to the skin. The electrodes cause the muscles
+              to shorten, which in turn helps prevent atrophy.
+            </td>
+          </tr>
+          <tr>
+            <td>3. Cryotherapy and Heat Therapy ($35)</td>
+            <td>
+              If a patient complains of muscle tightness anywhere on their body,
+              it may be beneficial to apply heat or cold to the aggravated
+              areas. Heat therapy includes the application of hot packs or even
+              paraffin wax. Cryotherapy may involve an ice pack application or
+              an ice massage.
+            </td>
+          </tr>
+          <tr>
+            <td>4. Kinesio Taping ($67)</td>
+            <td>
+              Kinesio tape can be applied straight to the skin and is a great
+              way to stabilize the joints and muscles while the patient
+              undergoes treatment.
+            </td>
+          </tr>
+          <tr>
+            <td>5. Therapeutic Ultrasound ($56)</td>
+            <td>
+              Ultrasound frequency provides a gentle method for targeting
+              damaged tissue with soft beams. Like a mini massage, the sound
+              waves of the ultrasound stimulate and are absorbed by the
+              ligaments, tendons, and fascia. This treatment can be used for
+              patients suffering from arthritis, tendonitis and muscle strain.
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        
+      <h1>Choose a service to get started!</h1>
+      <br />
 
-           
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
-    </body>
+      <div
+        class="btn-group-vertical"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio1"
+          >1. Soft Tissue Mobilization</label
+        >
 
+        <br />
 
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2"
+          >2. Electrotherapy</label
+        >
+
+        <br />
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio3"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio3"
+          >3. Cryotherapy and Heat Therapy</label
+        >
+
+        <br />
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio4"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio4"
+          >4. Kinesio Taping</label
+        >
+
+        <br />
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio5"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio5"
+          >5. Therapeutic Ultrasound</label
+        >
+      </div>
+
+      <div id="fname">
+        <label>Enter your First Name: </label>
+        <div class="input-group mb-3 w-50">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            aria-label="First Name"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+
+      <div id="lname">
+        <label>Enter your Last Name: </label>
+        <div class="input-group mb-3 w-50">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            aria-label="Last Name"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+
+      <div id="email">
+        <label>Enter your Email: </label>
+        <div class="input-group mb-3 w-50">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email"
+            aria-label="Email"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+
+      <div id="datetime">
+        <label for="meeting-time"
+          >Choose a date and time for your appointment:</label
+        >
+        <br />
+        <input
+          type="datetime-local"
+          id="meeting-time"
+          name="meeting-time"
+          value="2021-06-14T19:30"
+          min="2021-06-14T00:00"
+          max="2022-06-28T00:00"
+        />
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+          <span class="text-white" id="b">Site created by Ovais Azeem</span>
+        </div>
+      </footer>
+
+      <br />
+      <br />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
